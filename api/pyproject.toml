@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "app"
+version = "0.1.0"
+description = ""
+authors = ["HDYS-TTBYS <tatehide151@outlook.jp>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Django = "3.0.7"
+djangorestframework = "3.10"
+djangorestframework-simplejwt = "4.6.0"
+djoser = "^2.1.0"
+Pillow = "^8.1.0"
+django-cors-headers = "^3.7.0"
+autopep8 = "^1.5.4"
+
+[tool.poetry.dev-dependencies]
+autopep8 = "^1.5.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

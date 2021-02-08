@@ -1,0 +1,12 @@
+FROM node:15.7.0-alpine
+
+WORKDIR /usr/src/app/
+
+COPY frontend/package.json frontend/yarn.lock ./
+
+# RUN npm install -g npm
+
+RUN npm install -g npm@7.5.2d
+RUN yarn install
+
+EXPOSE 3000
